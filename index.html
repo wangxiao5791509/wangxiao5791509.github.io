@@ -132,7 +132,8 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
 <title>Image Slideshow</title>
 <style>
   .slideshow {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 600px; /* 设置适当的宽度 */
     height: 400px; /* 设置适当的高度 */
     overflow: hidden;
@@ -145,6 +146,18 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
     top: 0;
     left: 0;
     object-fit: contain; /* 保持原始比例，不缩放 */
+  }
+  .slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* 确保按钮在图像之上 */
+  }
+  .slideshow #previous {
+    left: 10px; /* 将按钮放置在图像左侧 */
+  }
+  .slideshow #next {
+    right: 10px; /* 将按钮放置在图像右侧 */
   }
 </style>
 </head>
@@ -185,10 +198,10 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
   <img src="https://raw.githubusercontent.com/wangxiao5791509/wangxiao5791509.github.io/main/sides_play/xiaowang002.jpg" alt="Image 33">
   <img src="https://raw.githubusercontent.com/wangxiao5791509/wangxiao5791509.github.io/main/sides_play/xiaowang003.jpg" alt="Image 34">
   <img src="https://raw.githubusercontent.com/wangxiao5791509/wangxiao5791509.github.io/main/sides_play/xiaowang004.jpg" alt="Image 35">
+  <button id="previous">Previous Image</button>
+  <button id="next">Next Image</button>
+  <script src="slideshow.js"></script>
 </div>
-<button id="next">Next Image</button>
-<button id="previous">Previous Image</button>
-<script src="slideshow.js"></script>
 </body>
 
 	
