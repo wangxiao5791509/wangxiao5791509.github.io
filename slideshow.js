@@ -20,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('previous').addEventListener('click', showPreviousImage);
 
   // 自动循环播放
-  setInterval(showNextImage, 3000); // 每3000毫秒切换到下一张图片
+  setInterval(showNextImage, 2000); // 每2000毫秒切换到下一张图片
 });
