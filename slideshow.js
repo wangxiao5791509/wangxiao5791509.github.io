@@ -18,3 +18,4 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('next').addEventListener('click', showNextImage);
   document.getElementById('previous').addEventListener('click', showPreviousImage);
 });
+ 
