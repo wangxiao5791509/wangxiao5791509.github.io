@@ -129,8 +129,15 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Slideshow</title>
 <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 确保容器占据整个视口的高度 */
+    margin: 0;
+  }
   .slideshow {
-    display: inline-block;
+    display: inline-block; /* 保持图片列表的布局方式 */
     width: 600px;
     height: 400px;
     overflow: hidden;
@@ -155,6 +162,7 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
     100% { opacity: 1; }
   }
 </style>
+</head>
 <body>
 <div class="slideshow">
   <img src="https://raw.githubusercontent.com/wangxiao5791509/wangxiao5791509.github.io/main/sides_play/AAAI2024_001.jpg" alt="Image 1">
