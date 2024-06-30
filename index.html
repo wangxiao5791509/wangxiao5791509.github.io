@@ -126,12 +126,13 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
 
 
 
-<head>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Slideshow</title>
 <style>
   .slideshow {
-    display: inline-block; /* 保持图片列表的布局方式 */
+    display: inline-block;
     width: 600px; /* 设置适当的宽度 */
     height: 400px; /* 设置适当的高度 */
     overflow: hidden;
@@ -141,19 +142,9 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
     width: 100%;
     height: 100%;
     position: absolute;
-    object-fit: contain;
-    animation: slideshow 15s infinite;
-  }
-  @keyframes slideshow {
-    0% { opacity: 1; }
-    20% { opacity: 0; }
-    25% { opacity: 1; }
-    45% { opacity: 0; }
-    50% { opacity: 1; }
-    70% { opacity: 0; }
-    75% { opacity: 1; }
-    95% { opacity: 0; }
-    100% { opacity: 1; }
+    top: 0;
+    left: 0;
+    display: none; /* 初始时隐藏所有图片 */
   }
 </style>
 </head>
@@ -195,7 +186,10 @@ Email: wangxiaocvpr@foxmail.com; xiaowang@ahu.edu.cn <br />
   <img src="https://raw.githubusercontent.com/wangxiao5791509/wangxiao5791509.github.io/main/sides_play/xiaowang003.jpg" alt="Image 34">
   <img src="https://raw.githubusercontent.com/wangxiao5791509/wangxiao5791509.github.io/main/sides_play/xiaowang004.jpg" alt="Image 35">
 </div>
+<button id="next">Next Image</button>
+<script src="slideshow.js"></script>
 </body>
+
 	
   
   
